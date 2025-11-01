@@ -127,31 +127,7 @@ def get_sport_stream(title: str):
             return url
     return None
 
-@app.get("/streams")
-def store_streams():
-    try:
-        res = requests.get(PPV_API)
-        res.raise_for_status()
-        data = res.json()
 
-        streams = {}
-        #first loop splits football basketball soccer
-        #second loop gets individual streams
-        for cat in data.get("streams", []):
-            for stream in cat.get("streams", []):
-                name = stream.get("name", "").strip()
-                uri = stream.get("uri_name")
-                iframe = stream.get("iframe")
-
-                # Prefer iframe, fall back to embed link
-                url = iframe or f"https://ppv.to/embed/{uri}"
-
-                if name and url:
-                    streams[name] = url
-        with open("CACHE_STREAMS.json", "w") as f:
-            json.dump(streams, f, indent=2)
-    except Exception as e:
-        print("Failed to get streams", e)
 
 # === MAIN ROUTE ===
 @app.post("/watch")
@@ -173,7 +149,9 @@ def watch(req: QueryRequest):
     else:
         return {"error": "No valid stream found", "parsed": parsed}
 
-
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}
 @app.get("/")
 def home():
     return {"message": "AI Streaming Agent is running!"}
