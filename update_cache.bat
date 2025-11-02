@@ -10,4 +10,3 @@ git commit -m "Auto update cache"
 
 git push origin main
 
-pause
