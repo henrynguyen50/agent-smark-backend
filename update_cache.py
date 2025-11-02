@@ -39,5 +39,7 @@ def git_commit_and_push():
     except subprocess.CalledProcessError as e:
         print("Git error:", e)
 if __name__ == "__main__":
+    os.remove(CACHE)
     update_cache()
     git_commit_and_push()
+    
