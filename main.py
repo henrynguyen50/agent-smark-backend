@@ -150,7 +150,7 @@ def get_sport_stream(title: str):
 
 @app.post("/watch")
 @limiter.limit("50/minute")
-def watch(req: QueryRequest):
+def watch(request: Request, req: QueryRequest):
     category = req.category.lower()
     parsed = extract_title_gemini_plain(req.query, category)
     print("PARSED DATA:", parsed)
