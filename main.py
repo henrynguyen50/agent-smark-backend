@@ -152,7 +152,8 @@ def watch(req: QueryRequest):
     else:
         return {"error": "No valid stream found", "parsed": parsed}
 
-@app.get("/ping", methods=["GET", "HEAD"])
+@app.api_route("/ping", methods=["GET", "HEAD"])
+@app.get("/ping",)
 def ping(request: Request):
     user_agent = request.headers.get("User-Agent", "")
     
