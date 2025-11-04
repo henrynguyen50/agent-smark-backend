@@ -17,7 +17,7 @@ if os.path.exists(CACHE):
     with open(CACHE, "r") as f:
         STREAMS_CACHE = json.load(f)
 origins = ["https://localhost",
-           "https://localhost:8000", "http://localhost:5173", "http://127.0.0.1:3000", "https://agent-smark.vercel.app"]
+           "https://localhost:8000", "http://localhost:5173", "http://127.0.0.1:3000", "https://agent-smark.vercel.app", "http://www.uptimerobot.com"]
 app = FastAPI()
 #frontend sends a preflight security check OPTIONS request need to 
 app.add_middleware(
