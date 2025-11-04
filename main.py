@@ -44,6 +44,8 @@ class QueryRequest(BaseModel):
     query: str
 
 
+
+
 # === GEMINI PARSING (plain text parsing) ===
 def extract_title_gemini_plain(user_input: str, category: str):
     prompt = f"""
@@ -150,7 +152,12 @@ def watch(req: QueryRequest):
         return {"error": "No valid stream found", "parsed": parsed}
 
 @app.get("/ping")
-def ping():
+def ping(request: Request):
+    user_agent = request.headers.get("User-Agent", "")
+    
+    if "uptimerobot" not in user_agent.lower():
+        raise HTTPException(status_code=403, detail="Forbidden")
+    return {"status": "ok"}
     return {"message": "pong"}
 @app.get("/")
 def home():
