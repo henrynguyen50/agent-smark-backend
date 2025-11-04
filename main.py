@@ -9,6 +9,16 @@ from dotenv import load_dotenv
 from google import genai
 import json
 
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
+
+#adding rate limiting
+limiter = Limiter(key_func=get_remote_address)
+app = FastAPI()
+app.state.limiter = limiter
+app.add_middleware(SlowAPIMiddleware)
 # === ENVIRONMENT VARIABLES ===
 load_dotenv()
 
@@ -19,7 +29,7 @@ if os.path.exists(CACHE):
         STREAMS_CACHE = json.load(f)
 origins = ["https://localhost",
            "https://localhost:8000", "http://localhost:5173", "http://127.0.0.1:3000", "https://agent-smark.vercel.app", "http://www.uptimerobot.com"]
-app = FastAPI()
+
 #frontend sends a preflight security check OPTIONS request need to 
 app.add_middleware(
     CORSMiddleware,
@@ -45,6 +55,10 @@ class QueryRequest(BaseModel):
     query: str
 
 
+# === LIMITER ===
+@app.exception_handler(RateLimitExceeded)
+def rate_limit_handler(request: Request, exc: RateLimitExceeded):
+    return HTTPException(status_code=429, detail="Rate limit exceeded")
 
 
 # === GEMINI PARSING (plain text parsing) ===
@@ -133,7 +147,9 @@ def get_sport_stream(title: str):
 
 
 # === MAIN ROUTE ===
+
 @app.post("/watch")
+@limiter.limit("50/minute")
 def watch(req: QueryRequest):
     category = req.category.lower()
     parsed = extract_title_gemini_plain(req.query, category)
