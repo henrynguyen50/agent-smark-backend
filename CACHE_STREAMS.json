@@ -1,47 +1,12 @@
 {
-  "NFL RedZone": "https://embednow.top/embed/nfl-redzone-wk10",
-  "New York Giants vs. Chicago Bears": "https://embednow.top/embed/nfl/5740/5740-chi",
-  "Buffalo Bills vs. Miami Dolphins": "https://embednow.top/embed/nfl/1517/1517-mia",
-  "Baltimore Ravens vs. Minnesota Vikings": "https://embednow.top/embed/nfl/7598/7598-min",
-  "Cleveland Browns vs. New York Jets": "https://embednow.top/embed/nfl/5659/5659-nyj",
-  "New England Patriots vs. Tampa Bay Buccaneers": "https://embednow.top/embed/nfl/6740/6740-tb",
-  "New Orleans Saints vs. Carolina Panthers": "https://embednow.top/embed/nfl/3946/3946-car",
-  "Jacksonville Jaguars vs. Houston Texans": "https://embednow.top/embed/nfl/1866/1866-hou",
-  "Arizona Cardinals vs. Seattle Seahawks": "https://embednow.top/embed/nfl/9173/9173-sea",
-  "Los Angeles Rams vs. San Francisco 49ers": "https://embednow.top/embed/nfl/4835/4835-sf",
-  "Detroit Lions vs. Washington Commanders": "https://embednow.top/embed/nfl/6221/6221-was",
-  "Pittsburgh Steelers vs. Los Angeles Chargers": "https://embednow.top/embed/nfl/8833/8833-lac",
-  "Philadelphia Eagles vs. Green Bay Packers": "https://embednow.top/embed/nfl/4295/4295-gb",
-  "Houston Rockets vs. Milwaukee Bucks": "https://embednow.top/embed/nba/11-09-2025/hou-mil",
-  "Brooklyn Nets vs. New York Knicks": "https://embednow.top/embed/nba/11-09-2025/bkn-nyk",
-  "Boston Celtics vs. Orlando Magic": "https://embednow.top/embed/nba/11-09-2025/bos-orl",
-  "Oklahoma City Thunder vs. Memphis Grizzlies": "https://embednow.top/embed/nba/11-09-2025/okc-mem",
-  "Detroit Pistons vs. Philadelphia 76ers": "https://embednow.top/embed/nba/11-09-2025/det-phi",
-  "Indiana Pacers vs. Golden State Warriors": "https://embednow.top/embed/nba/11-09-2025/ind-gsw",
-  "Minnesota Timberwolves vs. Sacramento Kings": "https://embednow.top/embed/nba/11-09-2025/min-sac",
-  "MF Duel: Lil CraCra vs. Fox The G": "https://embednow.top/embed/mf-duel-lil-cracra-vs.-fox-the-g",
-  "Grand Slam of Darts - Day 2 Evening": "https://embednow.top/embed/grand-slam-of-darts---day-2-evening",
-  "Grand Slam of Darts - Day 3": "https://embednow.top/embed/grand-slam-of-darts---day-3",
-  "Grand Slam of Darts - Day 4": "https://embednow.top/embed/grand-slam-of-darts---day-4",
-  "Grand Slam of Darts - Day 5": "https://embednow.top/embed/grand-slam-of-darts---day-5",
-  "Grand Slam of Darts - Day 6": "https://embednow.top/embed/grand-slam-of-darts---day-6",
-  "Grand Slam of Darts - Day 7": "https://embednow.top/embed/grand-slam-of-darts---day-7",
-  "Grand Slam of Darts - Day 8": "https://embednow.top/embed/grand-slam-of-darts---day-8",
-  "Grand Slam of Darts - Day 9 Afternoon": "https://embednow.top/embed/grand-slam-of-darts---day-9-afternoon",
-  "Grand Slam of Darts - Day 9 Evening": "https://embednow.top/embed/grand-slam-of-darts---day-9-evening",
-  "Roma vs. Udinese": "https://embednow.top/embed/serie-a/2025-11-09/rom-udi",
-  "Valencia CF vs. Real Betis": "https://embednow.top/embed/laliga/2025-11-09/val-bet",
-  "RCD Mallorca vs. Getafe CF": "https://embednow.top/embed/laliga/2025-11-09/mll-get",
-  "Frankfurt vs. Mainz": "https://embednow.top/embed/bundesliga/2025-11-09/sge-m05",
-  "Inter vs. Lazio": "https://embednow.top/embed/serie-a/2025-11-09/int-laz",
-  "OL vs. PSG": "https://embednow.top/embed/ligue-1/2025-11-09/lyn-psg",
-  "Celta vs. FC Barcelona": "https://embednow.top/embed/laliga/2025-11-09/cel-bar",
-  "Providence vs Merrimack": "https://embednow.top/embed/providence-vs-merrimack",
-  "Skankfest: New Orleans": "https://embednow.top/embed/skankfest-new-orleans",
-  "Brazillian Grand Prix - Race": "https://embednow.top/embed/f1/2025/brazil/race",
-  "24/7 South Park": "https://embednow.top/embed/247-south-park",
-  "24/7 COWS": "https://embednow.top/embed/247-cows",
-  "24/7 Family\u200b\u200c\u200b\u200b\u200b\u200b\u200c\u200b\u200c\u200b\u200c\u200c\u200b\u200c\u200b\u200b\u200c\u200b\u200c\u200c\u200b\u200c\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200c\u200b\u200c Guy": "https://embednow.top/embed/247-family-guy",
-  "24/7 The Simpsons": "https://embednow.top/embed/247-the-simpsons",
-  "Master stream test": "https://embednow.top/embed/master-stream-test-delete-12568"
+  "NFL RedZone \ud83c\udfc8 \ud83c\udfc8 \ud83c\udfc8": [
+    {
+      "source": "echo",
+      "id": "nfl-redzone-game-6262"
+    },
+    {
+      "source": "golf",
+      "id": "17292"
+    }
+  ]
 }
