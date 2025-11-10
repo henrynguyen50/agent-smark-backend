@@ -136,11 +136,18 @@ def build_vidking_embed(parsed, category: str):
             )
     return None
 
-
 # === SPORTS LOOKUP ===
 def get_sport_stream(title: str):
-    for name, url in STREAMS_CACHE.items():
+    for name, sources in STREAMS_CACHE.items():
         if title.lower() in name.lower():
+            #access first dict in sources
+            #If wanted to loop through all dicts in sources do for src in sources
+            if sources:
+                source = sources[0]
+                source_name = source["source"]
+                id_name = source["id"]
+            
+            url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
             return url
     return None
 
