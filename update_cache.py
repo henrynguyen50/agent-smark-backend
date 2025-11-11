@@ -34,16 +34,16 @@ def update_cache():
             json.dump(streams, f, indent=2)
     except Exception as e:
         print("Failed to get streams", e)
-def git_commit_and_push():
+"""def git_commit_and_push():
     try:
         subprocess.run(["git", "add", CACHE], check=True)
         subprocess.run(["git", "commit", "-m", "Update streams cache"], check=True)
         subprocess.run(["git", "push"], check=True)
         print("Cache committed and pushed successfully")
     except subprocess.CalledProcessError as e:
-        print("Git error:", e)
+        print("Git error:", e)"""
 if __name__ == "__main__":
     os.remove(CACHE)
     update_cache()
-    git_commit_and_push()
+    #git_commit_and_push()
     
