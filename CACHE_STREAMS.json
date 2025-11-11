@@ -1,38 +1,32 @@
 {
-  "Burkina Faso U17 vs Tajikistan U17": [
+  "Basketball Champions League: Levicki Patrioti vs Szolnoki Olajbanyasz": [
     {
       "source": "charlie",
-      "id": "burkina-faso-u17-vs-tajikistan-u17-1376621"
+      "id": "levicki-patrioti-vs-szolnoki-olajbanyasz-1629469363"
     }
   ],
-  "Czech Republic U17 vs United States U17": [
+  "Dubai Basketball vs KK Crvena zvezda": [
     {
       "source": "charlie",
-      "id": "czech-republic-u17-vs-united-states-u17-1376620"
+      "id": "dubai-basketball-vs-crvena-zvezda-meridianbet-belgrade-1629469362"
     }
   ],
-  "Uzbekistan U17 vs Panama U17": [
+  "New Zealand U17 vs Austria U17": [
     {
       "source": "charlie",
-      "id": "uzbekistan-u17-vs-panama-u17-1376623"
+      "id": "new-zealand-u17-vs-austria-u17-1376627"
     }
   ],
-  "Ireland U17 vs Paraguay U17": [
+  "Saudi Arabia U17 vs Mali U17": [
     {
       "source": "charlie",
-      "id": "republic-of-ireland-u17-vs-paraguay-u17-1376622"
+      "id": "saudi-arabia-u17-vs-mali-u17-1376626"
     }
   ],
-  "Chile U17 vs Canada Women U17": [
+  "IUPUI Jaguars vs Iu Columbus Crimson Pride": [
     {
-      "source": "charlie",
-      "id": "chile-u17-vs-canada-w-u17-1481648"
-    }
-  ],
-  "Uganda U17 vs France U17": [
-    {
-      "source": "charlie",
-      "id": "uganda-u17-vs-france-u17-1376624"
+      "source": "delta",
+      "id": "live_ncaa_iupui-iu-columbus-crimson-pride-live-streaming-423856368"
     }
   ],
   "ATP Tour: Nitto ATP Finals": [
@@ -45,12 +39,6 @@
     {
       "source": "charlie",
       "id": "pakistan-vs-sri-lanka-1629467908"
-    }
-  ],
-  "test": [
-    {
-      "source": "golf",
-      "id": "17360"
     }
   ]
 }
