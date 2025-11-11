@@ -2,11 +2,11 @@ name: run update_cache.py
 
 on:
   schedule:               #TIMES IN CENTRAL TIME
-    - cron: '30 5 * * *'  # Runs every day at 11:30 AM
-    - cron: '30 8 * * *'  # Runs every day at 2:30 PM
-    - cron: '0 11 * * *'  # Runs every day at 5:00 PM
-    - cron: '0 13 * * *'  # Runs every day at 7:00 PM
-    - cron: '0 15 * * *'  # Runs every day at 9:00 PM
+    - cron: '30 17 * * *'  # Runs every day at 11:30 AM
+    - cron: '30 20 * * *'  # Runs every day at 2:30 PM
+    - cron: '0 23 * * *'  # Runs every day at 5:00 PM
+    - cron: '0 1 * * *'  # Runs every day at 7:00 PM
+    - cron: '0 3 * * *'  # Runs every day at 9:00 PM
   workflow_dispatch:
 
 jobs:
