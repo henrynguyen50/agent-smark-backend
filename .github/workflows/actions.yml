@@ -3,6 +3,7 @@ name: run update_cache.py
 on:
   schedule:
     - cron: '0 */2 * * *'  # Runs every 2 hours
+  workflow_dispatch:
 
 jobs:
   build:
