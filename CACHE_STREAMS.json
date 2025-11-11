@@ -1,200 +1,56 @@
 {
-  "Women's Big Bash League: Melbourne Renegades vs Sydney Thunder": [
+  "Burkina Faso U17 vs Tajikistan U17": [
     {
       "source": "charlie",
-      "id": "melbourne-renegades-vs-sydney-thunder-1629467906"
+      "id": "burkina-faso-u17-vs-tajikistan-u17-1376621"
     }
   ],
-  "Ireland tour of Bangladesh: Bangladesh vs Ireland": [
+  "Czech Republic U17 vs United States U17": [
     {
       "source": "charlie",
-      "id": "bangladesh-vs-ireland-1629467907"
+      "id": "czech-republic-u17-vs-united-states-u17-1376620"
     }
   ],
-  "Los Angeles Clippers vs Atlanta Hawks": [
-    {
-      "source": "admin",
-      "id": "ppv-atlanta-hawks-vs-la-clippers"
-    },
+  "Uzbekistan U17 vs Panama U17": [
     {
       "source": "charlie",
-      "id": "atlanta-hawks-vs-los-angeles-clippers-1629469359"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_clippers-hawks-live-streaming-423815760"
-    },
-    {
-      "source": "echo",
-      "id": "los-angeles-clippers-vs-atlanta-hawks-basketball-469635"
-    },
-    {
-      "source": "golf",
-      "id": "17308"
+      "id": "uzbekistan-u17-vs-panama-u17-1376623"
     }
   ],
-  "Vegas Golden Knights vs Florida Panthers": [
-    {
-      "source": "admin",
-      "id": "ppv-florida-panthers-vs-vegas-golden-knights"
-    },
+  "Ireland U17 vs Paraguay U17": [
     {
       "source": "charlie",
-      "id": "florida-panthers-vs-vegas-golden-knights-1629469358"
-    },
+      "id": "republic-of-ireland-u17-vs-paraguay-u17-1376622"
+    }
+  ],
+  "Chile U17 vs Canada Women U17": [
     {
-      "source": "delta",
-      "id": "live_nhl_golden-knights-panthers-live-streaming-448237152"
-    },
+      "source": "charlie",
+      "id": "chile-u17-vs-canada-w-u17-1481648"
+    }
+  ],
+  "Uganda U17 vs France U17": [
     {
-      "source": "echo",
-      "id": "vegas-golden-knights-vs-florida-panthers-hockey-415872"
-    },
+      "source": "charlie",
+      "id": "uganda-u17-vs-france-u17-1376624"
+    }
+  ],
+  "ATP Tour: Nitto ATP Finals": [
     {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa61"
-    },
+      "source": "charlie",
+      "id": "nitto-atp-finals-1629469361"
+    }
+  ],
+  "Sri Lanka tour of Pakistan: Pakistan vs Sri Lanka": [
+    {
+      "source": "charlie",
+      "id": "pakistan-vs-sri-lanka-1629467908"
+    }
+  ],
+  "test": [
     {
       "source": "golf",
-      "id": "17299"
-    }
-  ],
-  "Phoenix Suns vs New Orleans Pelicans": [
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa5c"
-    },
-    {
-      "source": "golf",
-      "id": "17306"
-    }
-  ],
-  "Utah Jazz vs Minnesota Timberwolves": [
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa5d"
-    },
-    {
-      "source": "golf",
-      "id": "17307"
-    }
-  ],
-  "California Golden Bears vs Cal State Fullerton Titans": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_california-cs-fullerton-live-streaming-448292016"
-    }
-  ],
-  "Dallas Mavericks vs Milwaukee Bucks": [
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa56"
-    },
-    {
-      "source": "golf",
-      "id": "17305"
-    }
-  ],
-  "Edmonton Oilers vs Columbus Blue Jackets": [
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa60"
-    },
-    {
-      "source": "golf",
-      "id": "17298"
-    }
-  ],
-  "Green Bay Packers vs Philadelphia Eagles": [
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa67"
-    },
-    {
-      "source": "golf",
-      "id": "17208"
-    }
-  ],
-  "Chicago Bulls vs San Antonio Spurs": [
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa58"
-    },
-    {
-      "source": "golf",
-      "id": "17304"
-    }
-  ],
-  "Miami Heat vs Cleveland Cavaliers": [
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa5a"
-    },
-    {
-      "source": "golf",
-      "id": "17303"
-    }
-  ],
-  "ManningCast": [
-    {
-      "source": "delta",
-      "id": "live-event_manningcast-live-stream"
-    }
-  ],
-  "Miami vs Stetson": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_miami-stetson-live-streaming-448282080"
-    }
-  ],
-  "Detroit Pistons vs Washington Wizards": [
-    {
-      "source": "golf",
-      "id": "17301"
-    }
-  ],
-  "Charlotte Hornets vs Los Angeles Lakers": [
-    {
-      "source": "golf",
-      "id": "17300"
-    }
-  ],
-  "Orlando Magic vs Portland Trail Blazers": [
-    {
-      "source": "golf",
-      "id": "17302"
-    }
-  ],
-  "New Jersey Devils vs New York Islanders": [
-    {
-      "source": "golf",
-      "id": "17296"
-    }
-  ],
-  "New York Rangers vs Nashville Predators": [
-    {
-      "source": "golf",
-      "id": "17297"
-    }
-  ],
-  "Monday Night Raw": [
-    {
-      "source": "delta",
-      "id": "live-event_monday-night-raw-live-stream"
-    },
-    {
-      "source": "echo",
-      "id": "wwe-monday-night-raw-wwe-2025"
-    },
-    {
-      "source": "golf",
-      "id": "17309"
-    }
-  ],
-  "NFL NetWork 24/7 \ud83d\udd25\ud83d\udd25\ud83d\udd25": [
-    {
-      "source": "echo",
-      "id": "nfl-network-247-game-15884"
+      "id": "17360"
     }
   ]
 }
