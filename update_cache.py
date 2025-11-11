@@ -45,5 +45,5 @@ def git_commit_and_push():
 if __name__ == "__main__":
     os.remove(CACHE)
     update_cache()
-    #git_commit_and_push()
+    git_commit_and_push()
     
