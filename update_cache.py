@@ -4,28 +4,32 @@ import os
 import subprocess
 
 CACHE = "CACHE_STREAMS.json"
-PPV_API = "https://ppv.to/api/streams"
+STREAMD_MATCHES_API = "https://streamed.pk/api/matches/live"
+STREAMD_STREAMS_API = "https://streamed.pk/api/stream/"
 
 def update_cache():
     try:
-        res = requests.get(PPV_API)
+        res = requests.get(STREAMD_MATCHES_API)
         res.raise_for_status()
         data = res.json()
 
         streams = {}
         #first loop splits football basketball soccer
         #second loop gets individual streams
-        for cat in data.get("streams", []):
-            for stream in cat.get("streams", []):
-                name = stream.get("name", "").strip()
-                uri = stream.get("uri_name")
-                iframe = stream.get("iframe")
+        for match in data:
+            title = match.get("title", "NULL")
+            sources = match.get("sources", [])
+            if not sources:
+                continue
+            source_array = []
+            for src in sources:
+                source_array.append({
+                    "source": src.get("source"),
+                    "id": src.get("id") 
+                    })
+            streams[title] = source_array
 
-                # Prefer iframe, fall back to embed link
-                url = iframe or f"https://ppv.to/embed/{uri}"
-
-                if name and url:
-                    streams[name] = url
+            
         with open("CACHE_STREAMS.json", "w") as f:
             json.dump(streams, f, indent=2)
     except Exception as e:
@@ -41,5 +45,5 @@ def git_commit_and_push():
 if __name__ == "__main__":
     os.remove(CACHE)
     update_cache()
-    git_commit_and_push()
+    #git_commit_and_push()
     

@@ -1,74 +1,464 @@
 {
-  "Philadelphia Eagles vs. Green Bay Packers": "https://embednow.top/embed/nfl/4295/4295-gb",
-  "Los Angeles Lakers vs. Charlotte Hornets": "https://embednow.top/embed/nba/11-10-2025/lal-cha",
-  "Washington Wizards vs. Detroit Pistons": "https://embednow.top/embed/nba/11-10-2025/was-det",
-  "Portland Trail Blazers vs. Orlando Magic": "https://embednow.top/embed/nba/11-10-2025/por-orl",
-  "Cleveland Cavaliers vs. Miami Heat": "https://embednow.top/embed/nba/11-10-2025/cle-mia",
-  "San Antonio Spurs vs. Chicago Bulls": "https://embednow.top/embed/nba/11-10-2025/sas-chi",
-  "Milwaukee Bucks vs. Dallas Mavericks": "https://embednow.top/embed/nba/11-10-2025/mil-dal",
-  "New Orleans Pelicans vs. Phoenix Suns": "https://embednow.top/embed/nba/11-10-2025/nop-phx",
-  "Minnesota Timberwolves vs. Utah Jazz": "https://embednow.top/embed/nba/11-10-2025/min-uta",
-  "Atlanta Hawks vs. LA Clippers": "https://embednow.top/embed/nba/11-10-2025/atl-lac",
-  "Grand Slam of Darts - Day 4": "https://embednow.top/embed/grand-slam-of-darts---day-4",
-  "Grand Slam of Darts - Day 5": "https://embednow.top/embed/grand-slam-of-darts---day-5",
-  "Grand Slam of Darts - Day 6": "https://embednow.top/embed/grand-slam-of-darts---day-6",
-  "Grand Slam of Darts - Day 7": "https://embednow.top/embed/grand-slam-of-darts---day-7",
-  "Grand Slam of Darts - Day 8": "https://embednow.top/embed/grand-slam-of-darts---day-8",
-  "Grand Slam of Darts - Day 9 Afternoon": "https://embednow.top/embed/grand-slam-of-darts---day-9-afternoon",
-  "Grand Slam of Darts - Day 9 Evening": "https://embednow.top/embed/grand-slam-of-darts---day-9-evening",
-  "Armenia vs. Hungary": "https://embednow.top/embed/wc/2025-11-13/arm-hun",
-  "Azerbaijan vs. Iceland": "https://embednow.top/embed/wc/2025-11-13/aze-isl",
-  "Norway vs. Estonia": "https://embednow.top/embed/wc/2025-11-13/nor-est",
-  "Moldova vs. Italy": "https://embednow.top/embed/wc/2025-11-13/mda-ita",
-  "Andorra vs. Albania": "https://embednow.top/embed/wc/2025-11-13/and-alb",
-  "France vs. Ukraine": "https://embednow.top/embed/wc/2025-11-13/fra-ukr",
-  "England vs. Serbia": "https://embednow.top/embed/wc/2025-11-13/eng-srb",
-  "Republic of Ireland vs. Portugal": "https://embednow.top/embed/wc/2025-11-13/irl-por",
-  "Finland vs. Malta": "https://embednow.top/embed/wc/2025-11-14/fin-mlt",
-  "Luxembourg vs. Germany": "https://embednow.top/embed/wc/2025-11-14/lux-ger",
-  "Gibraltar vs. Montenegro": "https://embednow.top/embed/wc/2025-11-14/gib-mne",
-  "Croatia vs. Faroe Islands": "https://embednow.top/embed/wc/2025-11-14/cro-fro",
-  "Poland vs. Netherlands": "https://embednow.top/embed/wc/2025-11-14/pol-ned",
-  "Slovakia vs. Northern Ireland": "https://embednow.top/embed/wc/2025-11-14/svk-nir",
-  "Kazakhstan vs. Belgium": "https://embednow.top/embed/wc/2025-11-15/kaz-bel",
-  "T\u00fcrki\u0307ye vs. Bulgaria": "https://embednow.top/embed/wc/2025-11-15/tur-bul",
-  "Georgia vs. Spain": "https://embednow.top/embed/wc/2025-11-15/geo-esp",
-  "Cyprus vs. Austria": "https://embednow.top/embed/wc/2025-11-15/cyp-aut",
-  "Liechtenstein vs. Wales": "https://embednow.top/embed/wc/2025-11-15/lie-wal",
-  "Denmark vs. Belarus": "https://embednow.top/embed/wc/2025-11-15/den-blr",
-  "Switzerland vs. Sweden": "https://embednow.top/embed/wc/2025-11-15/sui-swe",
-  "Greece vs. Scotland": "https://embednow.top/embed/wc/2025-11-15/gre-sco",
-  "Slovenia vs. Kosovo": "https://embednow.top/embed/wc/2025-11-15/svn-kos",
-  "Bosnia and Herzegovina vs. Romania": "https://embednow.top/embed/wc/2025-11-15/bih-rou",
-  "Hungary vs. Republic of Ireland": "https://embednow.top/embed/wc/2025-11-16/hun-irl",
-  "Portugal vs. Armenia": "https://embednow.top/embed/wc/2025-11-16/por-arm",
-  "Ukraine vs. Iceland": "https://embednow.top/embed/wc/2025-11-16/ukr-isl",
-  "Serbia vs. Latvia": "https://embednow.top/embed/wc/2025-11-16/srb-lva",
-  "Albania vs. England": "https://embednow.top/embed/wc/2025-11-16/alb-eng",
-  "Azerbaijan vs. France": "https://embednow.top/embed/wc/2025-11-16/aze-fra",
-  "Italy vs. Norway": "https://embednow.top/embed/wc/2025-11-16/ita-nor",
-  "Israel vs. Moldova": "https://embednow.top/embed/wc/2025-11-16/isr-mda",
-  "Czechia vs. Gibraltar": "https://embednow.top/embed/wc/2025-11-17/cze-gib",
-  "Northern Ireland vs. Luxembourg": "https://embednow.top/embed/wc/2025-11-17/nir-lux",
-  "Montenegro vs. Croatia": "https://embednow.top/embed/wc/2025-11-17/mne-cro",
-  "Malta vs. Poland": "https://embednow.top/embed/wc/2025-11-17/mlt-pol",
-  "Germany vs. Slovakia": "https://embednow.top/embed/wc/2025-11-17/ger-svk",
-  "Netherlands vs. Lithuania": "https://embednow.top/embed/wc/2025-11-17/ned-ltu",
-  "New York Islanders vs. New Jersey Devils": "https://embednow.top/embed/nhl/8263/8263-nj",
-  "Nashville Predators vs. New York Rangers": "https://embednow.top/embed/nhl/8047/8047-nyr",
-  "Columbus Blue Jackets vs. Edmonton Oilers": "https://embednow.top/embed/nhl/5326/5326-edm",
-  "Florida Panthers vs. Vegas Golden Knights": "https://embednow.top/embed/nhl/8350/8350-vgk",
-  "Providence vs Merrimack": "https://embednow.top/embed/providence-vs-merrimack",
-  "Skankfest: New Orleans": "https://embednow.top/embed/skankfest-new-orleans",
-  "WWE: Monday Night RAW": "https://embednow.top/embed/wwe/raw/25-11-10",
-  "WWE: NXT": "https://embednow.top/embed/wwe/nxt/25-11-11",
-  "AEW: Wednesday Night Dynamite": "https://embednow.top/embed/aew/dynamite/25-11-12",
-  "TNA: Impact": "https://embednow.top/embed/tna/impact/25-11-13",
-  "WWE: Friday Night Smackdown": "https://embednow.top/embed/wwe/smackdown/25-11-14",
-  "AEW: Saturday Night Collision": "https://embednow.top/embed/aew/collision/25-11-15",
-  "24/7 South Park": "https://embednow.top/embed/247-south-park",
-  "24/7 COWS": "https://embednow.top/embed/247-cows",
-  "24/7 Family\u200b\u200b\u200c\u200b\u200c\u200c\u200c\u200c\u200c\u200b\u200c\u200c\u200b\u200c\u200c\u200c\u200c\u200c\u200c\u200c\u200c\u200b\u200b\u200b\u200c\u200c\u200b\u200b\u200b\u200c\u200c\u200c Guy": "https://embednow.top/embed/247-family-guy",
-  "24/7 The Simpsons": "https://embednow.top/embed/247-the-simpsons",
-  "Master stream test": "https://embednow.top/embed/master-stream-test-delete-12568"
+  "Minnesota Wild vs Calgary Flames": [
+    {
+      "source": "admin",
+      "id": "ppv-calgary-flames-vs-minnesota-wild"
+    },
+    {
+      "source": "delta",
+      "id": "live_nhl_wild-flames-live-streaming-447857856"
+    },
+    {
+      "source": "echo",
+      "id": "minnesota-wild-vs-calgary-flames-hockey-415866"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d25b"
+    },
+    {
+      "source": "golf",
+      "id": "17276"
+    }
+  ],
+  "Sacramento Kings vs Minnesota Timberwolves": [
+    {
+      "source": "delta",
+      "id": "live_nba_kings-timberwolves-live-streaming-423724608"
+    }
+  ],
+  "San Diego FC vs Portland Timbers": [
+    {
+      "source": "delta",
+      "id": "live_mls-playoffs_san-diego-fc-portland-live-streaming-438603984"
+    }
+  ],
+  "Philadelphia 76ers vs Detroit Pistons": [
+    {
+      "source": "admin",
+      "id": "ppv-detroit-pistons-vs-philadelphia-76-ers"
+    },
+    {
+      "source": "charlie",
+      "id": "detroit-pistons-vs-philadelphia-76ers-1629469254"
+    },
+    {
+      "source": "delta",
+      "id": "live_nba_76ers-pistons-live-streaming-423723744"
+    },
+    {
+      "source": "echo",
+      "id": "philadelphia-76ers-vs-detroit-pistons-basketball-469624"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d256"
+    },
+    {
+      "source": "golf",
+      "id": "17283"
+    }
+  ],
+  "Tigre vs Estudiantes de La Plata": [
+    {
+      "source": "echo",
+      "id": "tigre-vs-estudiantes-lp-football-1374273"
+    }
+  ],
+  "Golden State Warriors vs Indiana Pacers": [
+    {
+      "source": "delta",
+      "id": "live_nba_warriors-pacers-live-streaming-423724176"
+    }
+  ],
+  "Baylor Bears vs Washington Huskies": [
+    {
+      "source": "delta",
+      "id": "live_ncaa_baylor-washington-live-streaming-447972768"
+    }
+  ],
+  "Atletico Tucuman vs Godoy Cruz": [
+    {
+      "source": "echo",
+      "id": "atletico-tucuman-vs-godoy-cruz-football-1374285"
+    }
+  ],
+  "Los Angeles Chargers vs Pittsburgh Steelers": [
+    {
+      "source": "delta",
+      "id": "live_nfl_chargers-steelers-live-streaming-408363120"
+    }
+  ],
+  "West Indies tour of New Zealand: New Zealand vs West Indies": [
+    {
+      "source": "charlie",
+      "id": "new-zealand-vs-west-indies-1629467904"
+    }
+  ],
+  "Ottawa Senators vs Utah Mammoth": [
+    {
+      "source": "admin",
+      "id": "ppv-utah-mammoth-vs-ottawa-senators"
+    },
+    {
+      "source": "charlie",
+      "id": "utah-mammoth-vs-ottawa-senators-1629469252"
+    },
+    {
+      "source": "delta",
+      "id": "live_nhl_senators-mammoth-live-streaming-447856992"
+    },
+    {
+      "source": "echo",
+      "id": "ottawa-senators-vs-utah-mammoth-hockey-415864"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d258"
+    },
+    {
+      "source": "golf",
+      "id": "17274"
+    }
+  ],
+  "Toronto Maple Leafs vs Carolina Hurricanes": [
+    {
+      "source": "admin",
+      "id": "ppv-carolina-hurricanes-vs-toronto-maple-leafs"
+    },
+    {
+      "source": "charlie",
+      "id": "carolina-hurricanes-vs-toronto-maple-leafs-1629469253"
+    },
+    {
+      "source": "delta",
+      "id": "live_nhl_maple-leafs-hurricanes-live-streaming-447857424"
+    },
+    {
+      "source": "echo",
+      "id": "toronto-maple-leafs-vs-carolina-hurricanes-hockey-415865"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d259"
+    },
+    {
+      "source": "golf",
+      "id": "17273"
+    }
+  ],
+  "Dallas Stars vs Seattle Kraken": [
+    {
+      "source": "admin",
+      "id": "ppv-seattle-kraken-vs-dallas-stars"
+    },
+    {
+      "source": "charlie",
+      "id": "seattle-kraken-vs-dallas-stars-1629469251"
+    },
+    {
+      "source": "delta",
+      "id": "live_nhl_stars-kraken-live-streaming-447856560"
+    },
+    {
+      "source": "echo",
+      "id": "dallas-stars-vs-seattle-kraken-hockey-415863"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d25a"
+    },
+    {
+      "source": "golf",
+      "id": "17275"
+    }
+  ],
+  "World of Outlaws Awards Celebration": [
+    {
+      "source": "echo",
+      "id": "ppv-event-06-world-of-outlaws-awards-celebration-ppv-006"
+    }
+  ],
+  "Tennessee Martin Skyhawks vs Kentucky Christian Knights": [
+    {
+      "source": "delta",
+      "id": "live_ncaa_tennessee-martin-kentucky-christian-knights-live-streaming-423786816"
+    }
+  ],
+  "Fortaleza EC vs Gremio": [
+    {
+      "source": "echo",
+      "id": "fortaleza-ec-vs-gremio-football-1351371"
+    }
+  ],
+  "Mirassol vs Palmeiras": [
+    {
+      "source": "echo",
+      "id": "mirassol-vs-palmeiras-football-1351367"
+    }
+  ],
+  "America de Cali vs Union Magdalena": [
+    {
+      "source": "echo",
+      "id": "america-de-cali-vs-union-magdalena-football-1392533"
+    }
+  ],
+  "Boston Celtics vs. Orlando Magic": [
+    {
+      "source": "admin",
+      "id": "ppv-boston-celtics-vs-orlando-magic"
+    },
+    {
+      "source": "charlie",
+      "id": "boston-celtics-vs-orlando-magic-1629469247"
+    },
+    {
+      "source": "delta",
+      "id": "live_nba_magic-celtics-live-streaming-423723312"
+    },
+    {
+      "source": "echo",
+      "id": "orlando-magic-vs-boston-celtics-basketball-469621"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d254"
+    },
+    {
+      "source": "golf",
+      "id": "17281"
+    }
+  ],
+  "Brooklyn Nets vs. New York Knicks": [
+    {
+      "source": "admin",
+      "id": "ppv-brooklyn-nets-vs-new-york-knicks"
+    },
+    {
+      "source": "charlie",
+      "id": "brooklyn-nets-vs-new-york-knicks-1629469246"
+    },
+    {
+      "source": "delta",
+      "id": "live_nba_knicks-nets-live-streaming-423722880"
+    },
+    {
+      "source": "echo",
+      "id": "new-york-knicks-vs-brooklyn-nets-basketball-469622"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d253"
+    },
+    {
+      "source": "golf",
+      "id": "17280"
+    }
+  ],
+  "Oklahoma City Thunder vs. Memphis Grizzlies": [
+    {
+      "source": "admin",
+      "id": "ppv-oklahoma-city-thunder-vs-memphis-grizzlies"
+    },
+    {
+      "source": "charlie",
+      "id": "oklahoma-city-thunder-vs-memphis-grizzlies-1629469248"
+    },
+    {
+      "source": "delta",
+      "id": "live_nba_grizzlies-thunder-live-streaming-423722448"
+    },
+    {
+      "source": "echo",
+      "id": "memphis-grizzlies-vs-oklahoma-city-thunder-basketball-469623"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d252"
+    },
+    {
+      "source": "golf",
+      "id": "17282"
+    }
+  ],
+  "MMA: FURY FC 111": [
+    {
+      "source": "charlie",
+      "id": "fury-fc-111-1629469250"
+    },
+    {
+      "source": "echo",
+      "id": "ppv-event-05-fury-fc-111-ppv-05"
+    },
+    {
+      "source": "golf",
+      "id": "17294"
+    }
+  ],
+  "South Carolina Gamecocks vs Southern Mississippi Golden Eagles": [
+    {
+      "source": "delta",
+      "id": "live_ncaa_south-carolina-southern-mississippi-live-streaming-423785952"
+    }
+  ],
+  "GCW Green Mountains and Me\ud83c\udf1f": [
+    {
+      "source": "echo",
+      "id": "ppv-event-04-gcw-green-mountains-and-me-ppv-004"
+    }
+  ],
+  "Howard Bison vs Grambling St Tigers": [
+    {
+      "source": "delta",
+      "id": "live_ncaa_howard-grambling-st-live-streaming-447971904"
+    }
+  ],
+  "USC Trojans vs Manhattan Jaspers": [
+    {
+      "source": "delta",
+      "id": "live_ncaa_usc-manhattan-live-streaming-447972336"
+    }
+  ],
+  "Atl\u00e9tico Ottawa vs Cavalry FC": [
+    {
+      "source": "echo",
+      "id": "atletico-ottawa-vs-cavalry-fc-football-1485211"
+    }
+  ],
+  "San Francisco 49ers vs Los Angeles Rams": [
+    {
+      "source": "echo",
+      "id": "san-francisco-49ers-vs-los-angeles-rams-american-football-17459"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d269"
+    },
+    {
+      "source": "golf",
+      "id": "17205"
+    }
+  ],
+  "Washington Commanders vs Detroit Lions": [
+    {
+      "source": "echo",
+      "id": "washington-commanders-vs-detroit-lions-american-football-17460"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d26c"
+    },
+    {
+      "source": "golf",
+      "id": "17206"
+    }
+  ],
+  "Seattle Seahawks vs Arizona Cardinals": [
+    {
+      "source": "echo",
+      "id": "seattle-seahawks-vs-arizona-cardinals-american-football-17458"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d26a"
+    },
+    {
+      "source": "golf",
+      "id": "17204"
+    }
+  ],
+  "MF Duel: Lil CraCra vs. Fox The G": [
+    {
+      "source": "admin",
+      "id": "ppv-mf-duel-lil-cra-cra-vs-fox-the-g"
+    },
+    {
+      "source": "echo",
+      "id": "ppv-event-03-lil-cracra-v-fox-the-g-ppv-03"
+    },
+    {
+      "source": "golf",
+      "id": "17295"
+    }
+  ],
+  "Houston Rockets vs Milwaukee Bucks": [
+    {
+      "source": "foxtrot",
+      "id": "69112e18fe8530cd8001d251"
+    },
+    {
+      "source": "golf",
+      "id": "17279"
+    }
+  ],
+  "World Wide Technology Championship, Final Round": [
+    {
+      "source": "echo",
+      "id": "world-wide-technology-championship-final-round-atp1000"
+    }
+  ],
+  "Pittsburgh Penguins - Los Angeles Kings": [
+    {
+      "source": "golf",
+      "id": "17272"
+    }
+  ],
+  "Chicago Bears - New York Giants": [
+    {
+      "source": "golf",
+      "id": "17197"
+    }
+  ],
+  "Miami Dolphins - Buffalo Bills": [
+    {
+      "source": "golf",
+      "id": "17198"
+    }
+  ],
+  "Minnesota Vikings - Baltimore Ravens": [
+    {
+      "source": "golf",
+      "id": "17199"
+    }
+  ],
+  "New York Jets - Cleveland Browns": [
+    {
+      "source": "golf",
+      "id": "17200"
+    }
+  ],
+  "Tampa Bay Buccaneers - New England Patriots": [
+    {
+      "source": "golf",
+      "id": "17201"
+    }
+  ],
+  "Carolina Panthers - New Orleans Saints": [
+    {
+      "source": "golf",
+      "id": "17202"
+    }
+  ],
+  "Houston Texans - Jacksonville Jaguars": [
+    {
+      "source": "golf",
+      "id": "17203"
+    }
+  ],
+  "Detroit Red Wings - Chicago Blackhawks": [
+    {
+      "source": "golf",
+      "id": "17271"
+    }
+  ],
+  "NFL RedZone \ud83c\udfc8 \ud83c\udfc8 \ud83c\udfc8": [
+    {
+      "source": "echo",
+      "id": "nfl-redzone-game-6262"
+    },
+    {
+      "source": "golf",
+      "id": "17292"
+    }
+  ]
 }
