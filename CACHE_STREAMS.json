@@ -1,21 +1,65 @@
 {
-  "Phoenix Suns vs New Orleans Pelicans": [
+  "Women's Big Bash League: Melbourne Renegades vs Sydney Thunder": [
+    {
+      "source": "charlie",
+      "id": "melbourne-renegades-vs-sydney-thunder-1629467906"
+    }
+  ],
+  "Ireland tour of Bangladesh: Bangladesh vs Ireland": [
+    {
+      "source": "charlie",
+      "id": "bangladesh-vs-ireland-1629467907"
+    }
+  ],
+  "Los Angeles Clippers vs Atlanta Hawks": [
     {
       "source": "admin",
-      "id": "ppv-new-orleans-pelicans-vs-phoenix-suns"
+      "id": "ppv-atlanta-hawks-vs-la-clippers"
     },
     {
       "source": "charlie",
-      "id": "new-orleans-pelicans-vs-phoenix-suns-1629469355"
+      "id": "atlanta-hawks-vs-los-angeles-clippers-1629469359"
     },
     {
       "source": "delta",
-      "id": "live_nba_suns-pelicans-live-streaming-423814896"
+      "id": "live_nba_clippers-hawks-live-streaming-423815760"
     },
     {
       "source": "echo",
-      "id": "phoenix-suns-vs-new-orleans-pelicans-basketball-469633"
+      "id": "los-angeles-clippers-vs-atlanta-hawks-basketball-469635"
     },
+    {
+      "source": "golf",
+      "id": "17308"
+    }
+  ],
+  "Vegas Golden Knights vs Florida Panthers": [
+    {
+      "source": "admin",
+      "id": "ppv-florida-panthers-vs-vegas-golden-knights"
+    },
+    {
+      "source": "charlie",
+      "id": "florida-panthers-vs-vegas-golden-knights-1629469358"
+    },
+    {
+      "source": "delta",
+      "id": "live_nhl_golden-knights-panthers-live-streaming-448237152"
+    },
+    {
+      "source": "echo",
+      "id": "vegas-golden-knights-vs-florida-panthers-hockey-415872"
+    },
+    {
+      "source": "foxtrot",
+      "id": "69120f4cb7a7ad24c827fa61"
+    },
+    {
+      "source": "golf",
+      "id": "17299"
+    }
+  ],
+  "Phoenix Suns vs New Orleans Pelicans": [
     {
       "source": "foxtrot",
       "id": "69120f4cb7a7ad24c827fa5c"
@@ -26,22 +70,6 @@
     }
   ],
   "Utah Jazz vs Minnesota Timberwolves": [
-    {
-      "source": "admin",
-      "id": "ppv-minnesota-timberwolves-vs-utah-jazz"
-    },
-    {
-      "source": "charlie",
-      "id": "minnesota-timberwolves-vs-utah-jazz-1629469356"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_jazz-timberwolves-live-streaming-423815328"
-    },
-    {
-      "source": "echo",
-      "id": "utah-jazz-vs-minnesota-timberwolves-basketball-469634"
-    },
     {
       "source": "foxtrot",
       "id": "69120f4cb7a7ad24c827fa5d"
@@ -57,43 +85,7 @@
       "id": "live_ncaa_california-cs-fullerton-live-streaming-448292016"
     }
   ],
-  "UCLA Bruins vs West Georgia Wolves": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_ucla-west-georgia-wolves-live-streaming-448292880"
-    }
-  ],
-  "Vegas Golden Knights vs Florida Panthers": [
-    {
-      "source": "delta",
-      "id": "live_nhl_golden-knights-panthers-live-streaming-448237152"
-    }
-  ],
-  "Xavier vs Santa Clara": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_xavier-santa-clara-live-streaming-448289856"
-    }
-  ],
-  "Northwestern vs Cleveland State": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_nw-wildcats-cleveland-live-streaming-448289424"
-    }
-  ],
   "Dallas Mavericks vs Milwaukee Bucks": [
-    {
-      "source": "admin",
-      "id": "ppv-milwaukee-bucks-vs-dallas-mavericks"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_mavericks-bucks-live-streaming-423814464"
-    },
-    {
-      "source": "echo",
-      "id": "dallas-mavericks-vs-milwaukee-bucks-basketball-469632"
-    },
     {
       "source": "foxtrot",
       "id": "69120f4cb7a7ad24c827fa56"
@@ -105,22 +97,6 @@
   ],
   "Edmonton Oilers vs Columbus Blue Jackets": [
     {
-      "source": "admin",
-      "id": "ppv-columbus-blue-jackets-vs-edmonton-oilers"
-    },
-    {
-      "source": "charlie",
-      "id": "columbus-blue-jackets-vs-edmonton-oilers-1629469354"
-    },
-    {
-      "source": "delta",
-      "id": "live_nhl_oilers-blue-jackets-live-streaming-448236720"
-    },
-    {
-      "source": "echo",
-      "id": "edmonton-oilers-vs-columbus-blue-jackets-hockey-415871"
-    },
-    {
       "source": "foxtrot",
       "id": "69120f4cb7a7ad24c827fa60"
     },
@@ -129,35 +105,7 @@
       "id": "17298"
     }
   ],
-  "Myanmar and Timor-Leste tour of Indonesia: Indonesia vs Myanmar": [
-    {
-      "source": "charlie",
-      "id": "indonesia-vs-myanmar-1629469357"
-    }
-  ],
-  "Washington St Cougars vs Saint Thomas Tommies": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_washington-st-saint-thomas-tommies-live-streaming-448291584"
-    }
-  ],
   "Green Bay Packers vs Philadelphia Eagles": [
-    {
-      "source": "admin",
-      "id": "ppv-philadelphia-eagles-vs-green-bay-packers"
-    },
-    {
-      "source": "charlie",
-      "id": "philadelphia-eagles-vs-green-bay-packers-1629469352"
-    },
-    {
-      "source": "delta",
-      "id": "live_nfl_packers-eagles-live-streaming-408363552"
-    },
-    {
-      "source": "echo",
-      "id": "green-bay-packers-vs-philadelphia-eagles-american-football-17462"
-    },
     {
       "source": "foxtrot",
       "id": "69120f4cb7a7ad24c827fa67"
@@ -169,22 +117,6 @@
   ],
   "Chicago Bulls vs San Antonio Spurs": [
     {
-      "source": "admin",
-      "id": "ppv-san-antonio-spurs-vs-chicago-bulls"
-    },
-    {
-      "source": "charlie",
-      "id": "san-antonio-spurs-vs-chicago-bulls-1629469353"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_bulls-spurs-live-streaming-423814032"
-    },
-    {
-      "source": "echo",
-      "id": "chicago-bulls-vs-san-antonio-spurs-basketball-469631"
-    },
-    {
       "source": "foxtrot",
       "id": "69120f4cb7a7ad24c827fa58"
     },
@@ -193,29 +125,59 @@
       "id": "17304"
     }
   ],
-  "TCU vs Lamar": [
+  "Miami Heat vs Cleveland Cavaliers": [
     {
-      "source": "delta",
-      "id": "live_ncaa_tcu-lamar-live-streaming-448288560"
-    }
-  ],
-  "Saint Louis vs Lindenwood": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_saint-louis-lindenwood-lions-live-streaming-448288128"
-    }
-  ],
-  "LSU vs New Orleans": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_lsu-new-orleans-live-streaming-448287264"
-    }
-  ],
-  "WWE: Monday Night RAW": [
-    {
-      "source": "admin",
-      "id": "ppv-wwe-monday-night-raw"
+      "source": "foxtrot",
+      "id": "69120f4cb7a7ad24c827fa5a"
     },
+    {
+      "source": "golf",
+      "id": "17303"
+    }
+  ],
+  "ManningCast": [
+    {
+      "source": "delta",
+      "id": "live-event_manningcast-live-stream"
+    }
+  ],
+  "Miami vs Stetson": [
+    {
+      "source": "delta",
+      "id": "live_ncaa_miami-stetson-live-streaming-448282080"
+    }
+  ],
+  "Detroit Pistons vs Washington Wizards": [
+    {
+      "source": "golf",
+      "id": "17301"
+    }
+  ],
+  "Charlotte Hornets vs Los Angeles Lakers": [
+    {
+      "source": "golf",
+      "id": "17300"
+    }
+  ],
+  "Orlando Magic vs Portland Trail Blazers": [
+    {
+      "source": "golf",
+      "id": "17302"
+    }
+  ],
+  "New Jersey Devils vs New York Islanders": [
+    {
+      "source": "golf",
+      "id": "17296"
+    }
+  ],
+  "New York Rangers vs Nashville Predators": [
+    {
+      "source": "golf",
+      "id": "17297"
+    }
+  ],
+  "Monday Night Raw": [
     {
       "source": "delta",
       "id": "live-event_monday-night-raw-live-stream"
@@ -227,264 +189,6 @@
     {
       "source": "golf",
       "id": "17309"
-    }
-  ],
-  "Georgia Tech Yellow Jackets vs Southeastern Louisiana Lions": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_georgia-tech-se-louisiana-live-streaming-448290288"
-    }
-  ],
-  "Utah Utes vs Holy Cross Crusaders": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_utah-utes-holy-cross-live-streaming-448291152"
-    }
-  ],
-  "Miami Heat vs Cleveland Cavaliers": [
-    {
-      "source": "admin",
-      "id": "ppv-cleveland-cavaliers-vs-miami-heat"
-    },
-    {
-      "source": "charlie",
-      "id": "cleveland-cavaliers-vs-miami-heat-1629469349"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_heat-cavaliers-live-streaming-423813600"
-    },
-    {
-      "source": "echo",
-      "id": "miami-heat-vs-cleveland-cavaliers-basketball-469630"
-    },
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa5a"
-    },
-    {
-      "source": "golf",
-      "id": "17303"
-    }
-  ],
-  "Independiente Medell\u00edn vs Envigado": [
-    {
-      "source": "echo",
-      "id": "independiente-medellin-vs-envigado-football-1483846"
-    }
-  ],
-  "ManningCast": [
-    {
-      "source": "delta",
-      "id": "live-event_manningcast-live-stream"
-    }
-  ],
-  "Georgia State vs Presbyterian": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_georgia-st-presbyterian-live-streaming-448281216"
-    }
-  ],
-  "Eastern Kentucky vs Western Kentucky": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_eastern-kentucky-w-kentucky-live-streaming-448280784"
-    }
-  ],
-  "Miami vs Stetson": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_miami-stetson-live-streaming-448282080"
-    }
-  ],
-  "Pittsburgh vs Eastern Michigan": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_pittsburgh-eastern-michigan-live-streaming-448282944"
-    }
-  ],
-  "Seton Hall vs Fairfield": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_seton-hall-fairfield-live-streaming-448283376"
-    }
-  ],
-  "The Citadel vs Charleston Southern": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_citadel-charleston-southern-live-streaming-448279488"
-    }
-  ],
-  "Detroit Pistons vs Washington Wizards": [
-    {
-      "source": "admin",
-      "id": "ppv-washington-wizards-vs-detroit-pistons"
-    },
-    {
-      "source": "charlie",
-      "id": "washington-wizards-vs-detroit-pistons-1629469344"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_pistons-wizards-live-streaming-423812736"
-    },
-    {
-      "source": "echo",
-      "id": "detroit-pistons-vs-washington-wizards-basketball-469628"
-    },
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa59"
-    },
-    {
-      "source": "golf",
-      "id": "17301"
-    }
-  ],
-  "Charlotte Hornets vs Los Angeles Lakers": [
-    {
-      "source": "admin",
-      "id": "ppv-los-angeles-lakers-vs-charlotte-hornets"
-    },
-    {
-      "source": "charlie",
-      "id": "los-angeles-lakers-vs-charlotte-hornets-1629469345"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_hornets-lakers-live-streaming-423812304"
-    },
-    {
-      "source": "echo",
-      "id": "charlotte-hornets-vs-los-angeles-lakers-basketball-469627"
-    },
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa57"
-    },
-    {
-      "source": "golf",
-      "id": "17300"
-    }
-  ],
-  "Orlando Magic vs Portland Trail Blazers": [
-    {
-      "source": "admin",
-      "id": "ppv-portland-trail-blazers-vs-orlando-magic"
-    },
-    {
-      "source": "charlie",
-      "id": "portland-trail-blazers-vs-orlando-magic-1629469346"
-    },
-    {
-      "source": "delta",
-      "id": "live_nba_magic-trail-blazers-live-streaming-423813168"
-    },
-    {
-      "source": "echo",
-      "id": "orlando-magic-vs-portland-trail-blazers-basketball-469629"
-    },
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa5b"
-    },
-    {
-      "source": "golf",
-      "id": "17302"
-    }
-  ],
-  "New Jersey Devils vs New York Islanders": [
-    {
-      "source": "admin",
-      "id": "ppv-new-york-islanders-vs-new-jersey-devils"
-    },
-    {
-      "source": "charlie",
-      "id": "new-york-islanders-vs-new-jersey-devils-1629469348"
-    },
-    {
-      "source": "delta",
-      "id": "live_nhl_devils-islanders-live-streaming-448235856"
-    },
-    {
-      "source": "echo",
-      "id": "new-jersey-devils-vs-new-york-islanders-hockey-415869"
-    },
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa5e"
-    },
-    {
-      "source": "golf",
-      "id": "17296"
-    }
-  ],
-  "New York Rangers vs Nashville Predators": [
-    {
-      "source": "admin",
-      "id": "ppv-nashville-predators-vs-new-york-rangers"
-    },
-    {
-      "source": "charlie",
-      "id": "nashville-predators-vs-new-york-rangers-1629469347"
-    },
-    {
-      "source": "delta",
-      "id": "live_nhl_rangers-predators-live-streaming-448236288"
-    },
-    {
-      "source": "echo",
-      "id": "new-york-rangers-vs-nashville-predators-hockey-415870"
-    },
-    {
-      "source": "foxtrot",
-      "id": "69120f4cb7a7ad24c827fa5f"
-    },
-    {
-      "source": "golf",
-      "id": "17297"
-    }
-  ],
-  "Iowa State Cyclones vs Mississippi State Bulldogs": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_iowa-state-mississippi-state-live-streaming-423830016"
-    }
-  ],
-  "Texas Arlington Mavericks vs Arlington Baptist College": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_texas-arlington-arlington-baptist-college-live-streaming-423832176"
-    }
-  ],
-  "Wisconsin-Milwaukee Panthers vs Arkansas Little Rock Trojans": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_wisconsin-milwaukee-arkansas-little-rock-live-streaming-448288992"
-    }
-  ],
-  "Drake Bulldogs vs Simpson Storm": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_drake-simpson-storm-live-streaming-423828720"
-    }
-  ],
-  "McNeese State Cowboys vs CBS Ambassadors": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_mcneese-st-cbs-ambassadors-live-streaming-423833472"
-    }
-  ],
-  "Louisiana-Monroe Warhawks vs Rust College Bearcats": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_ulm-rust-college-bearcats-live-streaming-448285536"
-    }
-  ],
-  "Gardner-Webb Runnin' Bulldogs vs North Greenville Crusaders": [
-    {
-      "source": "delta",
-      "id": "live_ncaa_gardner-webb-north-greenville-crusaders-live-streaming-423829584"
     }
   ],
   "NFL NetWork 24/7 \ud83d\udd25\ud83d\udd25\ud83d\udd25": [
