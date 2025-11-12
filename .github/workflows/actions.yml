@@ -30,7 +30,7 @@ jobs:
       
       - name: run cache updater
         env:
-          DB)URL: ${{ secrets.DB_URL }}
+          DB_URL: ${{ secrets.DB_URL }}
         run: |
           python update_cache.py
 
