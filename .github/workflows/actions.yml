@@ -29,20 +29,10 @@ jobs:
           pip install -r requirements.txt
       
       - name: run cache updater
+        env:
+          DB)URL: ${{ secrets.DB_URL }}
         run: |
           python update_cache.py
 
-      - name: commit new cache
-        run: |
-          git config --local user.email "henryhuynguyen17@gmail.com"
-          git config --local user.name "henrynguyen50"
-
-          git add .
-          # commit only if there are staged changes
-          git diff --cached --quiet || git commit -m "Update cache"
       
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+     
