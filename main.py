@@ -4,7 +4,7 @@ import requests
 import os
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import Request, HTTPException
-
+import psycopg2
 from dotenv import load_dotenv
 from google import genai
 import json
@@ -22,11 +22,9 @@ app.add_middleware(SlowAPIMiddleware)
 # === ENVIRONMENT VARIABLES ===
 load_dotenv()
 
-CACHE = "CACHE_STREAMS.json"
 
-if os.path.exists(CACHE):
-    with open(CACHE, "r") as f:
-        STREAMS_CACHE = json.load(f)
+
+
 origins = ["https://localhost",
            "https://localhost:8000", "http://localhost:5173", "http://127.0.0.1:3000", "https://agent-smark.vercel.app", "http://www.uptimerobot.com"]
 
@@ -138,9 +136,28 @@ def build_vidking_embed(parsed, category: str):
 
 # === SPORTS LOOKUP ===
 def get_sport_stream(title: str):
-    for name, sources in STREAMS_CACHE.items():
+    conn = psycopg2.connect(
+        os.getenv("DB_URL")
+        )
+    cur = conn.cursor()
+    cur.execute("""
+                SELECT sources, source_id
+                FROM streams
+                WHERE title ILIKE %s
+                LIMIT 1
+                """,(f"%{title}%",))
+    result = cur.fetchone()
+    cur.close()
+    conn.close()
+
+    if result:
+        source_name, id_name = result
+        url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
+        return url
+    return None
+    """for name, sources in STREAMS_CACHE.items(): #get all key value pairs in cache
         if title.lower() in name.lower():
-            #access first dict in sources
+            #access first dict in sources since its a list
             #If wanted to loop through all dicts in sources do for src in sources
             if sources:
                 source = sources[0]
@@ -149,7 +166,7 @@ def get_sport_stream(title: str):
             
             url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
             return url
-    return None
+    return None"""
 
 
 
