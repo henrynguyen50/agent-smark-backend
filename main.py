@@ -7,6 +7,7 @@ from fastapi import Request, HTTPException
 import psycopg2
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
 import json
 
 from slowapi import Limiter
@@ -19,6 +20,7 @@ limiter = Limiter(key_func=get_remote_address)
 app = FastAPI()
 app.state.limiter = limiter
 app.add_middleware(SlowAPIMiddleware)
+
 # === ENVIRONMENT VARIABLES ===
 load_dotenv()
 
@@ -43,6 +45,7 @@ READ_ACCESS = os.getenv("READ_ACCESS")
 
 gem_client = genai.Client(api_key=GEMINI_KEY)
 
+
 VIDKING_BASE = "https://www.vidking.net/embed"
 PPV_API = "https://ppv.to/api/streams"
 
@@ -58,45 +61,61 @@ class QueryRequest(BaseModel):
 def rate_limit_handler(request: Request, exc: RateLimitExceeded):
     return HTTPException(status_code=429, detail="Rate limit exceeded")
 
+tools_call = [
+    {
+        "name": "build_vidking_embed",
+        "description": "Use when category is Movie or TV. Builds an embed URL for a movie or TV show given its title and category using TMDB ID and vidking url.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "title": {"type": "string", "description": "Title of movie or TV show or Anime"},
+                "category": {"type": "string", "description": 'Category: either "movie" or "tv"'},
+                "season": {"type": "integer", "description": "Season number (for TV shows only, optional)"},
+                "episode": {"type": "integer", "description": "Episode number (for TV shows only, optional)"}
+            },
+            "required": ["title", "category"]
+        }
+    },
+    {
+        "name": "get_sport_stream",
+        "description": "Use when category is Sports. Gets a sports stream URL given the team name or event name.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "title": {"type": "string", "description": "Name of the sports team or event"}
+                },
+                "required": ["title"]
+            }
+    }
+]
 
+tools = types.Tool(function_declarations=tools_call)
+config = types.GenerateContentConfig(tools=[tools])
 # === GEMINI PARSING (plain text parsing) ===
-def extract_title_gemini_plain(user_input: str, category: str):
+def extract_and_build(user_input: str, category: str):
     prompt = f"""
     You are a movie/tv/ title extractor, you are also a sports expert and can extract team names for a streaming assistant. 
     The category is "{category}". 
     Extract only the title and any season/episode numbers if relevant.
-    Respond in plain text format (no JSON!):
-
-    title: <title>
-    season: <season number, optional>
-    episode: <episode number, optional>
-
     User said: "{user_input}"
     """
 
     response = gem_client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
+        model="gemini-2.5-flash",
+        contents=prompt,
+        config=config
     )
-    text = response.text.strip()
-    print("GEMINI RESPONSE:\n", text)
-
-    # Manual parsing
-    parsed = {}
-    for line in text.splitlines():
-        if ":" in line:
-            key, value = line.split(":", 1)
-            key = key.strip().lower()
-            value = value.strip()
-            if key in ["season", "episode"]:
-                try:
-                    parsed[key] = int(value)
-                except:
-                    parsed[key] = 1
-            else:
-                parsed[key] = value
-
-    return parsed
+    print(response)
+    #when using tools gemini will produce list of possible tool calls
+    if response.candidates[0].content.parts[0].function_call:
+        function_call = response.candidates[0].content.parts[0].function_call
+        if function_call:
+            
+            if function_call.name == "build_vidking_embed":
+                return build_vidking_embed(function_call.args, function_call.args["category"])
+            elif function_call.name == "get_sport_stream":
+                return get_sport_stream(function_call.args["title"])
+    return None 
 
 
 # === TMDB LOOKUPS ===
@@ -155,18 +174,7 @@ def get_sport_stream(title: str):
         url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
         return url
     return None
-    """for name, sources in STREAMS_CACHE.items(): #get all key value pairs in cache
-        if title.lower() in name.lower():
-            #access first dict in sources since its a list
-            #If wanted to loop through all dicts in sources do for src in sources
-            if sources:
-                source = sources[0]
-                source_name = source["source"]
-                id_name = source["id"]
-            
-            url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
-            return url
-    return None"""
+    
 
 
 
@@ -176,21 +184,14 @@ def get_sport_stream(title: str):
 @limiter.limit("50/minute")
 def watch(request: Request, req: QueryRequest):
     category = req.category.lower()
-    parsed = extract_title_gemini_plain(req.query, category)
-    print("PARSED DATA:", parsed)
+    url = extract_and_build(req.query, category)
+    print("URl", url)
 
-    url = None
-    if category in ["movie", "tv"]:
-        url = build_vidking_embed(parsed, category)
-    elif category == "sport":
-        url = get_sport_stream(parsed.get("title", ""))
-    else:
-        return {"error": "Invalid category", "parsed": parsed}
-
+  
     if url:
-        return {"embed_url": url, "parsed": parsed}
+        return {"embed_url": url, "parsed": url}
     else:
-        return {"error": "No valid stream found", "parsed": parsed}
+        return {"error": "No valid stream found", "parsed": url}
 
 @app.api_route("/ping", methods=["GET", "HEAD"])
 @app.get("/ping",)
@@ -200,7 +201,9 @@ def ping(request: Request):
     if "uptimerobot" not in user_agent.lower():
         raise HTTPException(status_code=403, detail="Forbidden")
     return {"status": "ok"}
-    return {"message": "pong"}
+
+
+
 @app.get("/")
 def home():
     return {"message": "AI Streaming Agent is running!"}
