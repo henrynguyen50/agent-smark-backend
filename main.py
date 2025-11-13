@@ -1,3 +1,4 @@
+from time import time
 from fastapi import FastAPI
 from pydantic import BaseModel
 import requests
@@ -99,12 +100,7 @@ def extract_and_build(user_input: str, category: str):
     Extract only the title and any season/episode numbers if relevant.
     User said: "{user_input}"
     """
-
-    response = gem_client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt,
-        config=config
-    )
+    response = generate_retry(prompt, config)
     print(response)
     #when using tools gemini will produce list of possible tool calls
     if response.candidates[0].content.parts[0].function_call:
@@ -117,6 +113,20 @@ def extract_and_build(user_input: str, category: str):
                 return get_sport_stream(function_call.args["title"])
     return None 
 
+def generate_retry(prompt, config, retries = 3, delay = 2):
+    for i in range(retries):
+        try:
+            return gem_client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=config
+            )
+            
+        except Exception as e:
+            print(f"Attempt {i+1} failed: {e}")
+            time.sleep(delay)
+            delay *= 2
+    raise Exception("Failed to generate content after retries")
 
 # === TMDB LOOKUPS ===
 def get_tmdb_id(title: str, category: str):
