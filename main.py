@@ -15,6 +15,7 @@ from slowapi import Limiter
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
+import time 
 
 #adding rate limiting
 limiter = Limiter(key_func=get_remote_address)
@@ -95,7 +96,15 @@ config = types.GenerateContentConfig(tools=[tools])
 # === GEMINI PARSING (plain text parsing) ===
 def extract_and_build(user_input: str, category: str):
     prompt = f"""
-    You are a movie/tv/ title extractor, you are also a sports expert and can extract team names for a streaming assistant. 
+    Your job: 
+    - Identify the **intended movie, TV show, or sports team** mentioned by the user.
+    - Normalize it to the **official, canonical title** that would match a database such as TMDB, TVDB, or sports rosters.
+    - If the user uses an approximate, shortened, or incorrect title, infer the closest well-known title.
+    Examples:
+    - "fast and furious" → "The Fast and the Furious" 
+    - "harry potter 1" → "Harry Potter and the Sorcerer's Stone"
+    - "avengers 3" → "Avengers: Infinity War"
+    - "cowboys game" → "Dallas Cowboys"
     The category is "{category}". 
     Extract only the title and any season/episode numbers if relevant.
     User said: "{user_input}"
@@ -139,8 +148,13 @@ def get_tmdb_id(title: str, category: str):
         res = requests.get(url, headers=headers)
         if res.status_code == 200:
             data = res.json()
-            if data.get("results"):
-                return data["results"][0]["id"]
+            #so data is a dict with results list need to get that first
+            results = data.get("results", [])
+            results = results[0:4]
+            sorted_results = sorted(results, key=lambda x: x["vote_count"], reverse=True)
+            
+            if sorted_results:
+                return sorted_results[0]["id"]
     except Exception as e:
         print("TMDB API error:", e)
     return None
