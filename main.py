@@ -98,12 +98,9 @@ def extract_and_build(user_input: str, category: str):
     prompt = f"""
     Your job: 
     - Identify the **intended movie, TV show, or sports team** mentioned by the user.
-    - Normalize it to the **official, canonical title** that would match a database such as TMDB, TVDB, or sports rosters.
-    - If the user uses an approximate, shortened, or incorrect title, infer the closest well-known title.
+    - If the user uses an approximate, shortened, or incorrect title, infer the closest title.
     Examples:
     - "fast and furious" → "The Fast and the Furious" 
-    - "harry potter 1" → "Harry Potter and the Sorcerer's Stone"
-    - "avengers 3" → "Avengers: Infinity War"
     - "cowboys game" → "Dallas Cowboys"
     The category is "{category}". 
     Extract only the title and any season/episode numbers if relevant.
