@@ -5,7 +5,7 @@ import subprocess
 import psycopg2
 from dotenv import load_dotenv
 load_dotenv()
-STREAMD_MATCHES_API = "https://streamed.pk/api/matches/live"
+STREAMD_MATCHES_API = "https://streamed.pk/api/matches/all-today"
 DB_URL = os.getenv("DB_URL")
 print(DB_URL)
 
@@ -79,3 +79,4 @@ if __name__ == "__main__":
     init_db()
     update_cache()  
     
+    #query_db()
