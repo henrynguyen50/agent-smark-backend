@@ -1,0 +1,14 @@
+name: ping endpoint
+on:
+  schedule:               #TIMES IN CENTRAL TIME
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: curl endpoint
+        run: |
+            curl -X GET https://agent-smark-backend.vercel.app/ping
