@@ -1,4 +1,5 @@
 from time import time
+from turtle import title
 from fastapi import FastAPI
 from pydantic import BaseModel
 import requests
@@ -17,6 +18,7 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
 import time 
 
+from supabase import create_client, Client
 #adding rate limiting
 limiter = Limiter(key_func=get_remote_address)
 app = FastAPI()
@@ -174,18 +176,18 @@ def build_vidking_embed(parsed, category: str):
             )
     return None
 
-# === SPORTS LOOKUP ===
+"""# === SPORTS LOOKUP ===
 def get_sport_stream(title: str):
     conn = psycopg2.connect(
         os.getenv("DB_URL")
         )
     cur = conn.cursor()
-    cur.execute("""
-                SELECT sources, source_id
-                FROM streams
-                WHERE title ILIKE %s
-                LIMIT 1
-                """,(f"%{title}%",))
+    cur.execute(
+                #SELECT sources, source_id
+                #FROM streams
+                #WHERE title ILIKE %s
+                #LIMIT 1
+                ,(f"%{title}%",))
     result = cur.fetchone()
     cur.close()
     conn.close()
@@ -194,9 +196,24 @@ def get_sport_stream(title: str):
         source_name, id_name = result
         url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
         return url
-    return None
-    
+    return None"""
 
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+    
+def get_sport_stream(title: str):
+    
+    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    pattern = f"%{title}%"
+    resp = supabase.table('streams').select('sources, source_id').ilike("title", pattern).limit(1).execute()
+    
+    result = resp.data[0] if resp.data else None
+
+    if result:
+        source_name, id_name = result.get("sources"), result.get("source_id")
+        url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
+        return url
+    return None
 
 
 # === MAIN ROUTE ===

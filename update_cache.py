@@ -3,11 +3,14 @@ import requests
 import os
 import subprocess
 import psycopg2
+from supabase import create_client
 from dotenv import load_dotenv
 load_dotenv()
 STREAMD_MATCHES_API = "https://streamed.pk/api/matches/all-today"
 DB_URL = os.getenv("DB_URL")
-print(DB_URL)
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
 
 
 def init_db():
@@ -66,6 +69,51 @@ def update_cache():
         print("Updated cache")
     except Exception as e:
         print("Failed to get streams", e)
+
+# Supabase-backed implementations
+
+def clear_db_supabase():
+    """Delete all rows from the streams table using the Supabase client."""
+    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    # delete all rows (use with caution)
+    supabase.table('streams').delete().neq('id', 0).execute()
+
+def query_db_supabase():
+    """Fetch all rows from the streams table."""
+    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    resp = supabase.table('streams').select('*').execute()
+    # resp.data contains the list of rows
+    print(resp.data)
+
+def update_db_supabase():
+    """Fetch data from the STREAMD_MATCHES_API and update the Supabase streams table."""
+    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    try:
+        res = requests.get(STREAMD_MATCHES_API)
+        res.raise_for_status()
+        data = res.json()
+
+        records = []
+        for match in data:
+            title = match.get('title', 'NULL')
+            sources = match.get('sources', [])
+            if not sources:
+                continue
+            for src in sources:
+                records.append({
+                    'title': title,
+                    'sources': src.get('source'),
+                    'source_id': src.get('id')
+                })
+        print(records)
+
+        # Batch insert for efficiency
+        if records:
+            supabase.table('streams').insert(records).execute()
+
+        print('Updated cache (supabase)')
+    except Exception as e:
+        print('Failed to update supabase cache', e)
 """def git_commit_and_push():
     try:
         subprocess.run(["git", "add", CACHE], check=True)
@@ -75,8 +123,8 @@ def update_cache():
     except subprocess.CalledProcessError as e:
         print("Git error:", e)"""
 if __name__ == "__main__":
-    clear_db()
-    init_db()
-    update_cache()  
+    clear_db_supabase()
     
+    update_db_supabase()  
+    query_db_supabase()
     #query_db()
