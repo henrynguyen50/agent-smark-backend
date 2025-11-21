@@ -28,7 +28,8 @@ jobs:
       
       - name: run cache updater
         env:
-          DB_URL: ${{ secrets.DB_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
           python update_cache.py
 
