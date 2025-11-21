@@ -49,7 +49,7 @@ READ_ACCESS = os.getenv("READ_ACCESS")
 gem_client = genai.Client(api_key=GEMINI_KEY)
 
 
-VIDKING_BASE = "https://www.vidking.net/embed"
+VIDKING_BASE = "https://hexa.watch/watch"
 PPV_API = "https://ppv.to/api/streams"
 
 
@@ -171,7 +171,7 @@ def build_vidking_embed(parsed, category: str):
         if tmdb_id:
             return (
                 f"{VIDKING_BASE}/tv/{tmdb_id}/{season}/{episode}"
-                "?autoPlay=true&nextEpisode=true&episodeSelector=true"
+                #"?autoPlay=true&nextEpisode=true&episodeSelector=true"
             )
     return None
 
