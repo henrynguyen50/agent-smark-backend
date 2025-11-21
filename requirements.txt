@@ -6,3 +6,4 @@ google-genai
 pydantic
 slowapi
 psycopg2
+supabase
