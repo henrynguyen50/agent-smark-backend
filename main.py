@@ -49,7 +49,7 @@ READ_ACCESS = os.getenv("READ_ACCESS")
 gem_client = genai.Client(api_key=GEMINI_KEY)
 
 
-VIDKING_BASE = "https://hexa.watch/watch"
+VIDKING_BASE = "https://www.vidking.net/embed"
 PPV_API = "https://ppv.to/api/streams"
 
 
