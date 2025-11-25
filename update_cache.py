@@ -125,8 +125,8 @@ def update_db_supabase():
     except subprocess.CalledProcessError as e:
         print("Git error:", e)"""
 if __name__ == "__main__":
-    """clear_db_supabase()
+    clear_db_supabase()
     
-    update_db_supabase() """ 
-    query_db_supabase()
+    update_db_supabase() 
+    #query_db_supabase()
     #query_db()
