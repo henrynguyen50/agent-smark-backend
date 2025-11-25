@@ -201,10 +201,10 @@ def get_sport_stream(title: str):
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
     
-def get_sport_stream(title: str):
-    
+def get_sport_stream(query: str):
+    query = query.lower()
     supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-    pattern = f"%{title}%"
+    pattern = f"%{query}%"
     resp = supabase.table('streams').select('sources, source_id').ilike("title", pattern).limit(1).execute()
     
     result = resp.data[0] if resp.data else None

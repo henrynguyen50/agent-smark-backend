@@ -83,7 +83,8 @@ def query_db_supabase():
     supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
     resp = supabase.table('streams').select('*').execute()
     # resp.data contains the list of rows
-    print(resp.data)
+    with open('debug_records.json', 'w') as f:
+            json.dump(resp.data, f, indent=4)
 
 def update_db_supabase():
     """Fetch data from the STREAMD_MATCHES_API and update the Supabase streams table."""
@@ -101,11 +102,12 @@ def update_db_supabase():
                 continue
             for src in sources:
                 records.append({
-                    'title': title,
+                    'title': title.lower(),
                     'sources': src.get('source'),
                     'source_id': src.get('id')
                 })
-        print(records)
+        
+       
 
         # Batch insert for efficiency
         if records:
@@ -123,8 +125,8 @@ def update_db_supabase():
     except subprocess.CalledProcessError as e:
         print("Git error:", e)"""
 if __name__ == "__main__":
-    clear_db_supabase()
+    """clear_db_supabase()
     
-    update_db_supabase()  
+    update_db_supabase() """ 
     query_db_supabase()
     #query_db()
