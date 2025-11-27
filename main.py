@@ -172,7 +172,7 @@ def build_vidking_embed(parsed, category: str):
         if tmdb_id:
             return (
                 f"{VIDKING_BASE}/tv/{tmdb_id}/{season}/{episode}"
-                #"?autoPlay=true&nextEpisode=true&episodeSelector=true"
+                "?autoPlay=true&nextEpisode=true&episodeSelector=true"
             )
     return None
 
