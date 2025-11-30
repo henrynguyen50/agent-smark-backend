@@ -204,13 +204,20 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")
     
 def get_sport_stream(query: str):
     query = query.lower()
-    query = "%" + query.replace(" ", "%") + "%"
-    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-    resp = supabase.table('streams').select('sources, source_id').ilike("title", query).limit(1).execute()
     
-    result = resp.data[0] if resp.data else None
+    keywords = query.split()
+    
+    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    q = supabase.table('streams').select('sources, source_id')
+    #works like an AND statement 
+    for word in keywords:
+        query = "%" + word + "%"
+        resp = q.ilike("title", query)
+    res = q.limit(1).execute()
+    
+    result = res.data[0] if res.data else None
 
-    if result:
+    if result: 
         source_name, id_name = result.get("sources"), result.get("source_id")
         url = f"https://embedsports.top/embed/{source_name}/{id_name}/1"
         return url
