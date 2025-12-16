@@ -101,6 +101,7 @@ def extract_and_build(user_input: str, category: str):
     - Do not ever return "I couldnt find movie or tv show" just return what you think is the title
     - Identify the **intended movie, TV show, or sports team** mentioned by the user.
     - If the user uses an approximate, shortened, or incorrect title, infer the closest title.
+    - If you cannot identify a title, return what the user inputted as the title.
     - If sports related identify the teams and return only the team names, no VS or versus no commas just spaces
     Examples:
     - "fast and furious" → "The Fast and the Furious" 
